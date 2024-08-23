@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "dist": "npx tsc",
-    "dev":"nodemon .src/server.ts",
+    "dev": "nodemon .src/server.ts",
     "start": "node dist/server.js",
-    "watch":"tsc -w",
+    "watch": "tsc -w",
     "prepare": "husky"
   },
   "author": "Abhishek Chaurasiya",
@@ -24,15 +24,20 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.9.0",
     "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.5.0",
+    "eslint": "^9.9.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
   }
 }
