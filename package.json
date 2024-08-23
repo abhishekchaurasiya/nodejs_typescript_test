@@ -2,16 +2,19 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Fully backend setup",
-  "main": "server.ts",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "build": "npx tsc",
-    "start": "nodemon dist/server",
+    "dist": "npx tsc",
+    "dev":"nodemon .src/server.ts",
+    "start": "node dist/server.js",
+    "watch":"tsc -w",
     "prepare": "husky"
   },
   "author": "Abhishek Chaurasiya",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
