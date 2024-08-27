@@ -1,5 +1,5 @@
 import express from 'express';
-import "dotenv/config";
+import 'dotenv/config';
 
 
 const port = 4040
@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.listen(port, () => {
-    console.log(`Server listening on ${port}`)
+    return `Server listening on ${port}`
 })
 
 

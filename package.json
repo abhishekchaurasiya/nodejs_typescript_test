@@ -9,10 +9,17 @@
     "dev": "nodemon .src/server.ts",
     "start": "node dist/server.js",
     "watch": "tsc -w",
+    "lint": "eslint .",
+    "lint:fix":"eslint . --fix",
     "prepare": "husky"
   },
   "author": "Abhishek Chaurasiya",
   "license": "ISC",
+  "lint-staged":{
+    "*.ts": [
+      "npm run lint:fix"
+    ]
+  },
   "dependencies": {
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
