@@ -9,15 +9,18 @@
     "dev": "nodemon .src/server.ts",
     "start": "node dist/server.js",
     "watch": "tsc -w",
-    "lint": "eslint .",
-    "lint:fix":"eslint . --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --fix",
     "prepare": "husky"
   },
   "author": "Abhishek Chaurasiya",
   "license": "ISC",
-  "lint-staged":{
+  "lint-staged": {
     "*.ts": [
-      "npm run lint:fix"
+      "npm run lint:fix",
+      "npm run format:fix"
     ]
   },
   "dependencies": {
@@ -40,9 +43,11 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.5.0",
     "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "nodemon": "^3.1.4",
+    "prettier": "3.3.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0"
