@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "lib": ["ES6"],
-    "module": "NodeNext",
+    "module": "Node16",
     "rootDir": "./src",
     "outDir": "./dist",
     "removeComments": true,
@@ -17,6 +16,8 @@
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "sourceMap": true
   }
+  
 }
